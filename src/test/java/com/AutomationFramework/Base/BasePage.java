@@ -16,11 +16,11 @@ public class BasePage {
 	public Helpers Helper =new Helpers(); 
 	
 	
-	public void takeScreenshot(String fileName) throws IOException {
+	public String takeScreenshot(String fileName) throws IOException {
 		File scrFile = ((TakesScreenshot) Driver.Browser).getScreenshotAs(OutputType.FILE);
 		String currentDir = System.getProperty("user.dir");
-		FileUtils.copyFile(scrFile, new File(currentDir + "/Artifacts/screenshots/" + fileName+System.currentTimeMillis() + ".png"));
+		String screenshotFileNameString=fileName+System.currentTimeMillis() + ".png";
+		FileUtils.copyFile(scrFile, new File(currentDir + "/Artifacts/screenshots/" +screenshotFileNameString ));
+		return screenshotFileNameString;
 	}
-
-
 }

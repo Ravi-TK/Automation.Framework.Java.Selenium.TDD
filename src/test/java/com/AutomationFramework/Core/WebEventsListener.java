@@ -145,11 +145,12 @@ public class WebEventsListener extends BasePage implements WebDriverEventListene
 
 	public void onException(Throwable error, WebDriver arg1) {
 		System.out.println("Exception occured: " + error);
-		try {
-			takeScreenshot("TestFailed");
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
+//		try {
+//			//takeScreenshot("TestFailed");
+//		} catch (IOException e) {
+//			e.printStackTrace();
+//		}
+		//need to put this in the log file 
 
 	}
 
