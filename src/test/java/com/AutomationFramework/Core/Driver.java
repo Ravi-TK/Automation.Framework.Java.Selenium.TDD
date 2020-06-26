@@ -106,7 +106,7 @@ public class Driver {
 	 public static void StopBrowser()
      {
          Browser.quit();
-         Browser = null;
+//         Browser = null;
          _browserWait = null;
      }
 	 	 

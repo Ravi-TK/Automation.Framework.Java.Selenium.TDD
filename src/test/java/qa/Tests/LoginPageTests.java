@@ -15,9 +15,9 @@ public class LoginPageTests extends TestInitaliser {
 	@BeforeClass
 	public void setup()
 	{
-		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+
-				"\\BrowserDrivers\\chromedriver.exe");
-		Driver.StartBrowser(BrowserTypes.Chrome, 30 , null);
+//		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+
+//				"\\BrowserDrivers\\chromedriver.exe");
+//		Driver.StartBrowser(BrowserTypes.Chrome, 30 , null);
 	}
 	
 	@Test(description = "Customer Login Feature")

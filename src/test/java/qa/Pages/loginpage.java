@@ -23,7 +23,7 @@ public class loginpage extends BasePage {
 	@FindBy(how = How.XPATH, using = "/html//button[@id='submit-button']")
 	public WebElement signIn_Button_WebElement;
 
-	@FindBy(how = How.XPATH, using = "//li[@id='nav-two']/a[@href='/umbraco/surface/general/myaccountt']")
+	@FindBy(how = How.XPATH, using = "//li[@id='nav-two']/a[@href='/umbraco/surface/general/myaccount']")
 	public WebElement kcomMyAccountLinkElement;
 	
 	// Initialising the Page Objects:
