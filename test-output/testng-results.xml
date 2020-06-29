@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-06-26T16:49:27Z" name="Suite" finished-at="2020-06-26T16:49:52Z" duration-ms="24190">
+  <suite started-at="2020-06-29T16:28:55Z" name="Suite" finished-at="2020-06-29T16:29:07Z" duration-ms="12211">
     <groups>
     </groups>
-    <test started-at="2020-06-26T16:49:27Z" name="Test" finished-at="2020-06-26T16:49:52Z" duration-ms="24190">
+    <test started-at="2020-06-29T16:28:55Z" name="Test" finished-at="2020-06-29T16:29:07Z" duration-ms="12211">
       <class name="qa.Tests.LoginPageTests">
-        <test-method is-config="true" signature="setup()[pri:0, instance:qa.Tests.LoginPageTests@78047b92]" started-at="2020-06-26T16:49:31Z" name="setup" finished-at="2020-06-26T16:49:31Z" duration-ms="10" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:qa.Tests.LoginPageTests@290d210d]" started-at="2020-06-29T16:28:58Z" name="setup" finished-at="2020-06-29T16:28:58Z" duration-ms="36" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="login()[pri:0, instance:qa.Tests.LoginPageTests@78047b92]" started-at="2020-06-26T16:49:31Z" name="login" description="Customer Login Feature" finished-at="2020-06-26T16:49:43Z" duration-ms="12053" status="PASS">
+        <test-method signature="login()[pri:0, instance:qa.Tests.LoginPageTests@290d210d]" started-at="2020-06-29T16:28:58Z" name="login" description="Customer Login Feature" finished-at="2020-06-29T16:29:03Z" duration-ms="4939" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method signature="loginKCOM()[pri:0, instance:qa.Tests.LoginPageTests@78047b92]" started-at="2020-06-26T16:49:44Z" name="loginKCOM" description="KCOM Feature Login" finished-at="2020-06-26T16:49:50Z" duration-ms="5169" status="PASS">
+        <test-method signature="loginKCOM()[pri:0, instance:qa.Tests.LoginPageTests@290d210d]" started-at="2020-06-29T16:29:05Z" name="loginKCOM" description="KCOM Feature Login" finished-at="2020-06-29T16:29:07Z" duration-ms="1956" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginKCOM -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.Tests.LoginPageTests@78047b92]" started-at="2020-06-26T16:49:51Z" name="tearDown" finished-at="2020-06-26T16:49:52Z" duration-ms="817" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:qa.Tests.LoginPageTests@290d210d]" started-at="2020-06-29T16:29:07Z" name="tearDown" finished-at="2020-06-29T16:29:07Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="after(org.testng.ITestContext)[pri:0, instance:qa.Tests.LoginPageTests@78047b92]" started-at="2020-06-26T16:49:52Z" name="after" finished-at="2020-06-26T16:49:52Z" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="after(org.testng.ITestContext)[pri:0, instance:qa.Tests.LoginPageTests@290d210d]" started-at="2020-06-29T16:29:07Z" name="after" finished-at="2020-06-29T16:29:07Z" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1efdcd5]]>
+                <![CDATA[org.testng.TestRunner@4e61e4c2]]>
               </value>
             </param>
           </params>

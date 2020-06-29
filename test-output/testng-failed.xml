@@ -9,8 +9,8 @@
       <class name="qa.Tests.LoginPageTests">
         <methods>
           <include name="after"/>
+          <include name="login"/>
           <include name="tearDown"/>
-          <include name="loginKCOM"/>
           <include name="setup"/>
         </methods>
       </class> <!-- qa.Tests.LoginPageTests -->

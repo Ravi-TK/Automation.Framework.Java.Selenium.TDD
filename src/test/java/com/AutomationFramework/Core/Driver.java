@@ -16,6 +16,8 @@ import org.openqa.selenium.support.events.EventFiringWebDriver;
 import org.openqa.selenium.support.events.WebDriverEventListener;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Driver {
 	
 	 private static WebDriverWait _browserWait;
@@ -28,32 +30,45 @@ public class Driver {
         switch (browserType)
         {
             case Firefox:
+            	WebDriverManager.firefoxdriver().setup();
+            	
                 if (browserOptions != null)
                     Browser = new FirefoxDriver((FirefoxOptions)browserOptions);
                 else
                     Browser = new FirefoxDriver();
+                
                 break;
 
             case FirefoxHeadless:
+            	WebDriverManager.firefoxdriver().setup();
                 ((FirefoxOptions)browserOptions).addArguments("--headless");
                 Browser = new FirefoxDriver((FirefoxOptions)browserOptions);
+                
                 break;
 
             case InternetExplorer:
+            	WebDriverManager.iedriver().setup();
+            	
                 if (browserOptions != null)
                     Browser = new InternetExplorerDriver((InternetExplorerOptions)browserOptions);
                 else
                     Browser = new InternetExplorerDriver();
+                
                 break;
 
             case Chrome:
-                if (browserOptions != null)
-                    Browser = new ChromeDriver((ChromeOptions)browserOptions);
+            	WebDriverManager.chromedriver().setup();
+                
+            	if (browserOptions != null)
+                	Browser=new ChromeDriver((ChromeOptions)browserOptions);
                 else
                     Browser = new ChromeDriver();
+            	
                 break;
 
             case ChromeHeadless:
+            	WebDriverManager.chromedriver().setup();
+            	
                 if (browserOptions != null)
                 {
                     ((ChromeOptions)browserOptions).addArguments("--headless");
@@ -70,22 +85,26 @@ public class Driver {
                 break;
 
             case Edge:
+            	WebDriverManager.edgedriver().setup();
+            	
                 if (browserOptions != null)
                     Browser = new EdgeDriver((EdgeOptions)browserOptions);
                 else
                     Browser = new EdgeDriver();
                 break;
 
-            case Safari:
-                if (browserOptions != null)
-                    Browser = new SafariDriver((SafariOptions)browserOptions);
-                else
-                    Browser = new SafariDriver();
-                break;
+//            case Safari:
+//                if (browserOptions != null)
+//                    Browser = new SafariDriver((SafariOptions)browserOptions);
+//                else
+//                    Browser = new SafariDriver();
+//                break;
 
             case Opera:
+            	WebDriverManager.operadriver().setup();
+            	
                 if (browserOptions != null)
-                    Browser = new OperaDriver((OperaOptions)browserOptions);
+                	Browser=new OperaDriver((OperaOptions)browserOptions);
                 else
                     Browser = new OperaDriver();
                 break;

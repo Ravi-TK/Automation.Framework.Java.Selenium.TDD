@@ -9,15 +9,13 @@ public class TestInitaliser {
 	@BeforeTest
 	public void setup()
 	{
-		System.out.println("*******Before Test********");
 	}
 	
 	
 	@AfterTest
 	public void after(ITestContext context)
 	{
-		//System.out.println(context.);
-		System.out.println("**********after Test******  ");
+
 	}
 	
 
