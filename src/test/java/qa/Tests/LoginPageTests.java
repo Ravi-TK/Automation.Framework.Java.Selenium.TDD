@@ -8,6 +8,7 @@ import org.testng.annotations.Test;
 import com.AutomationFramework.Core.BrowserTypes;
 import com.AutomationFramework.Core.Driver;
 import qa.PageObjectsCollections.PageObjects;
+import qa.Pages.loginpage;
 
 
 public class LoginPageTests extends TestInitaliser {
@@ -19,8 +20,7 @@ public class LoginPageTests extends TestInitaliser {
 	
 	@Test(description = "Customer Login Feature")
 	public void login() throws InterruptedException, IOException
-	{
-		 		
+	{ 		
 		PageObjects.login.Helper.BrowserHelper.NavigateToUrl(PageObjects.login.loginPageURLString);
 		PageObjects.login.emailTextBoxWebElement.sendKeys("emailtestqaz@gmail.com");
 		PageObjects.login.Helper.BrowserHelper.GetBrowserTitle();
